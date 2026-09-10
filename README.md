@@ -27,20 +27,9 @@ Clasificador de dígitos del 0 al 9 sobre imágenes de 8x8 píxeles en escala de
 | Base       | 95.83%           | 0.1296       |
 | Optimizado | 98.33%           | 0.0646       |
 
-El modelo optimizado usa más filtros, Dropout y EarlyStopping (`patience=5`, restaurando los mejores pesos), lo que sube el accuracy y reduce el loss a menos de la mitad frente al modelo base.
-
-<table>
-<tr>
-<td><img src="img/curvas_modelo_base.png" alt="Curvas modelo base"/></td>
-<td><img src="img/curvas_modelo_optimizado.png" alt="Curvas modelo optimizado"/></td>
-</tr>
-<tr>
-<td><img src="img/matriz_confusion_base.png" alt="Matriz de confusión modelo base"/></td>
-<td><img src="img/matriz_confusion_optimizado.png" alt="Matriz de confusión modelo optimizado"/></td>
-</tr>
-</table>
-
-En el modelo optimizado, los pocos errores que quedan son entre el 8 y el 1, y entre el 9 y el 7.
+El modelo optimizado usa más filtros, Dropout y EarlyStopping (`patience=5`, restaurando los mejores pesos), lo que sube el accuracy y reduce el loss a menos de la mitad frente al modelo base
+(más detalles usando el generador de gráficos - script de python)
+Y en el mismo, los pocos errores que quedan son entre el 8 y el 1, y entre el 9 y el 7.
 
 ## Cómo ejecutarlo
 
